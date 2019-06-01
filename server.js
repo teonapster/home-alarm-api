@@ -12,9 +12,6 @@ const server = http.createServer(function (req, res) {
     cors();
     const credentials = auth(req)
     const urlParts = url.parse(req.url, true);
-    res.setHeader('Access-Control-Allow-Origin: *');
-    res.setHeader('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');
 
     // Check credentials
     // The "check" function will typically be against your user store
