@@ -3,15 +3,14 @@ var auth = require('basic-auth')
 var compare = require('tsscmp')
 var fs = require("fs");
 var url = require('url');
-var cors = require('cors')
 
 console.log(`only user ${process.env.USERNAME} is granted`)
 
 // Create server
 const server = http.createServer(function (req, res) {
-    cors();
     const credentials = auth(req)
     const urlParts = url.parse(req.url, true);
+    res.setHeader('Access-Control-Allow-Origin: *');
 
     // Check credentials
     // The "check" function will typically be against your user store
