@@ -1,0 +1,30 @@
+{
+  "name": "home-alarm-api",
+  "version": "1.0.0",
+  "description": "Home alarm api project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teonapster/home-alarm-api.git"
+  },
+  "keywords": [
+    "home-alarm",
+    "alarm",
+    "api"
+  ],
+  "author": "teonapster@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/teonapster/home-alarm-api/issues"
+  },
+  "homepage": "https://github.com/teonapster/home-alarm-api#readme",
+  "dependencies": {
+    "basic-auth": "^2.0.1",
+    "http": "0.0.0",
+    "tsscmp": "^1.0.6"
+  }
+}
