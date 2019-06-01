@@ -25,6 +25,7 @@
   "dependencies": {
     "basic-auth": "^2.0.1",
     "http": "0.0.0",
-    "tsscmp": "^1.0.6"
+    "tsscmp": "^1.0.6",
+    "cors": "2.8.5"
   }
 }
