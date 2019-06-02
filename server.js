@@ -39,3 +39,24 @@ function serve(urlParts,res) {
     }
     
 }
+
+// Basic function to validate credentials for example
+function check(name, pass) {
+    let valid = true
+
+    // Simple method to prevent short-circut and use timing-safe compare
+    valid = compare(name, process.env.USERNAME) && valid
+    valid = compare(pass, process.env.PASSWORD) && valid
+
+    return valid
+}
+
+function setAlarmState(locked) {
+    const myJson = { locked };
+    fs.writeFile("alarm-state.json", JSON.stringify(myJson), "utf8", () => { });
+}
+
+
+
+// Listen
+server.listen(process.env.PORT || 3000)
