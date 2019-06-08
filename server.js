@@ -12,7 +12,7 @@ const server = http.createServer(function (req, res) {
     const urlParts = url.parse(req.url, true);
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', '*');
-    res.setHeader('Access-Control-Allow-Headers', '*');
+    res.setHeader('Access-Control-Allow-Headers', 'Authorization');
 
     // Check credentials
     // The "check" function will typically be against your user store
